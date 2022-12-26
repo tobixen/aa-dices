@@ -1,4 +1,5 @@
 import dices
+import logging
 
 class Outcomes:
     """
@@ -47,7 +48,7 @@ class WinLoseOutcomes:
         ret._bad = self.bad()+other.bad()
         ret._good = self.good()+other.good()
         if self.num_wins_losses() or other.num_wins_losses():
-            raise NotImplementedError()
+            logging.error("ignoring some outcomes, probably neligible")
         return ret
 
     def good(self):
@@ -215,7 +216,7 @@ class BattleFronts:
         outcomes.min_hits = min_hits
         return outcomes.good() / outcomes.all()
 
-    def multi_roll(self, max_rolls=10, min_hits=1, max_losses=None, multipler=1, divisor=1):
+    def multi_roll(self, max_rolls=12, min_hits=1, max_losses=None, multipler=1, divisor=1):
         """Returns the probability for a battle ending good
 
         max_rolls is to avoid too deep recursion

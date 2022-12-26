@@ -72,6 +72,10 @@ points and a battle ship being worth 20 points) on both sides.
 I'm unlikely to ever get time to pursue those plans myself, but if
 anyone wants to take over the project I'm happy to hand it over.
 
+## Similar projects
+
+https://github.com/djensen47/AACalc
+
 ## License
 
 Latest GPL applies.

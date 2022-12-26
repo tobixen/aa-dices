@@ -29,13 +29,10 @@ one troop, one tank and one fighter, and it's paramount that the tank
 is taken out.  We don't want to lose any bombers, and we're happy to
 retreat as soon as the tank has been destroyed:
 
-    $ python ./main.py --max-losses=0 --min-hits=2 0 0 0 5 0 1 0 1
-    23.13% probability for a good outcome
-
-It seems like one have to accepting to lose one or two bombers in this case:
-
     $ python ./main.py --max-losses=0 --min-hits=2 0 0 0 5 0 1 1 1
     11.51% probability for a good outcome
+
+It seems like one have to accepting to lose one or two bombers in this case:
 
     $ python ./main.py --max-losses=1 --min-hits=2 0 0 0 5 0 1 1 1
     47.95% probability for a good outcome
